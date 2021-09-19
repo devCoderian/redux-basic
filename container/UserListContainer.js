@@ -5,10 +5,8 @@ import axios from 'axios';
 import { getUsersFail, getUsersStart, getUsersSucceess } from "../redux/actions";
 export default function UserListContainer(){
     const users = useSelector((state)  => state.users.data)
-    console.log(users);
     const dispatch = useDispatch();
 
-    console.log(users);
     const getUsers = useCallback(async function getUsers(){
             try{
                 dispatch(getUsersStart());
