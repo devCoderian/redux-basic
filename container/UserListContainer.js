@@ -7,17 +7,6 @@ export default function UserListContainer(){
     const users = useSelector((state)  => state.users.data)
     console.log(users);
     const dispatch = useDispatch();
-    // const start = useCallback(()=>{
-    //     dispatch(getUsersStart());
-    // },[dispatch])
-    // const success = useCallback(
-    //     (data)=>{
-    //         console.log(data)
-    //     dispatch(getUsersSucceess(data));
-    // },[dispatch])
-    // const fail = useCallback((error)=>{
-    //     dispatch(getUsersFail(error));
-    // },[dispatch])
 
     console.log(users);
     const getUsers = useCallback(async function getUsers(){
